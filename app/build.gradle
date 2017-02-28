@@ -1,10 +1,12 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+group = 'com.github.prasannakumark'
 
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "edcontrols.mobinius.com.edandroidcblibrary"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
