@@ -209,6 +209,11 @@ public class PerformanceTestCase extends LiteTestCase {
                 assertEquals(event.getChangeCount(), event.getCompletedChangeCount());
             }
         }
+
+        @Override
+        public void errorEvent(String errorMessage) {
+
+        }
     }
 
     protected void logPerformanceStats(long time, String comment) {

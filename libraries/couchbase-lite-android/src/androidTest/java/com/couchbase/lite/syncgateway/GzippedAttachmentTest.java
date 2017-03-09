@@ -112,6 +112,11 @@ public class GzippedAttachmentTest extends LiteTestCaseWithDB {
                     latch1.countDown();
                 }
             }
+
+            @Override
+            public void errorEvent(String errorMessage) {
+
+            }
         });
         runReplication(pusher);
         assertTrue(latch1.await(30, TimeUnit.SECONDS));
@@ -126,6 +131,11 @@ public class GzippedAttachmentTest extends LiteTestCaseWithDB {
                 if (event.getCompletedChangeCount() > 0) {
                     latch2.countDown();
                 }
+            }
+
+            @Override
+            public void errorEvent(String errorMessage) {
+
             }
         });
         runReplication(puller);
@@ -208,6 +218,11 @@ public class GzippedAttachmentTest extends LiteTestCaseWithDB {
                     latch1.countDown();
                 }
             }
+
+            @Override
+            public void errorEvent(String errorMessage) {
+
+            }
         });
         runReplication(pusher);
         assertTrue(latch1.await(5, TimeUnit.SECONDS));
@@ -222,6 +237,11 @@ public class GzippedAttachmentTest extends LiteTestCaseWithDB {
                 if (event.getCompletedChangeCount() > 0) {
                     latch2.countDown();
                 }
+            }
+
+            @Override
+            public void errorEvent(String errorMessage) {
+
             }
         });
         runReplication(puller);

@@ -1391,6 +1391,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                         replicationIdleSecondTime.countDown();
                     }
                 }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
+                }
             });
 
             database.addChangeListener(new Database.ChangeListener() {
@@ -1573,6 +1578,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                     if (event.getCompletedChangeCount() == numMockDocsToServe) {
                         receivedAllDocs.countDown();
                     }
+                }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
                 }
             });
 
@@ -2281,6 +2291,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                         enteredIdleState.countDown();
                     }
                 }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
+                }
             });
 
             // start pull replication
@@ -2495,6 +2510,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                         changeEventError.countDown();
                     }
                 }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
+                }
             });
 
             runReplication(pullReplication);
@@ -2537,6 +2557,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                         Log.i(Log.TAG, "STOPPED");
                         replicationStoppedFirstTime.countDown();
                     }
+                }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
                 }
             });
 
@@ -3453,6 +3478,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                         idleSignal2.countDown();
                     }
                 }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
+                }
             });
 
             // start pull replication
@@ -3594,6 +3624,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                         }
                     }
                 }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
+                }
             }
             CountDownLatch checkStateToIdle = new CountDownLatch(1);
             CountDownLatch checkRequestCount = new CountDownLatch(1);
@@ -3709,6 +3744,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                             this.enterIdleStateSignal.countDown();
                         }
                     }
+                }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
                 }
             }
             CountDownLatch enterIdleStateSignal = new CountDownLatch(1);
@@ -4184,6 +4224,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                         enteredIdleState1.countDown();
                     }
                 }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
+                }
             });
 
             // 1. start pull replication
@@ -4220,6 +4265,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                             enteredIdleState2.countDown();
                         }
                     }
+                }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
                 }
             });
 
@@ -4290,6 +4340,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                         enteredStoppedState.countDown();
                     }
                 }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
+                }
             });
 
             // 1. start pull replication
@@ -4358,6 +4413,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                         enteredStoppedState.countDown();
                     }
                 }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
+                }
             });
 
             // 1. start pull replication
@@ -4424,6 +4484,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                         pullInitialIdleState.countDown();
                     }
                 }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
+                }
             });
 
             // start pull replication
@@ -4456,6 +4521,11 @@ public class ReplicationMockWebServerTest extends LiteTestCaseWithDB {
                             event.getTransition().getDestination() == ReplicationState.RUNNING) {
                         runningSignal.countDown();
                     }
+                }
+
+                @Override
+                public void errorEvent(String errorMessage) {
+
                 }
             });
 

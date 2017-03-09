@@ -104,6 +104,11 @@ public class ReplicationTest extends LiteTestCaseWithDB {
                     countDownLatch.countDown();
                 }
             }
+
+            @Override
+            public void errorEvent(String errorMessage) {
+
+            }
         });
 
         db.close();

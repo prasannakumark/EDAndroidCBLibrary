@@ -84,6 +84,11 @@ public class PullReplWithRevsAndAttsTest extends LiteTestCaseWithDB {
                     latch1.countDown();
                 }
             }
+
+            @Override
+            public void errorEvent(String errorMessage) {
+
+            }
         });
         runReplication(pusher);
         assertEquals(0, latch1.getCount());
@@ -97,6 +102,11 @@ public class PullReplWithRevsAndAttsTest extends LiteTestCaseWithDB {
                 if (event.getCompletedChangeCount() == 1) {
                     latch2.countDown();
                 }
+            }
+
+            @Override
+            public void errorEvent(String errorMessage) {
+
             }
         });
         runReplication(puller);
@@ -119,6 +129,11 @@ public class PullReplWithRevsAndAttsTest extends LiteTestCaseWithDB {
                     latch3.countDown();
                 }
             }
+
+            @Override
+            public void errorEvent(String errorMessage) {
+
+            }
         });
         runReplication(pusher);
         assertEquals(0, latch3.getCount());
@@ -140,6 +155,11 @@ public class PullReplWithRevsAndAttsTest extends LiteTestCaseWithDB {
                     latch4.countDown();
                 }
             }
+
+            @Override
+            public void errorEvent(String errorMessage) {
+
+            }
         });
         runReplication(pusher);
         assertEquals(0, latch4.getCount());
@@ -153,6 +173,11 @@ public class PullReplWithRevsAndAttsTest extends LiteTestCaseWithDB {
                 if (event.getCompletedChangeCount() == 1) {
                     latch5.countDown();
                 }
+            }
+
+            @Override
+            public void errorEvent(String errorMessage) {
+
             }
         });
         runReplication(puller);

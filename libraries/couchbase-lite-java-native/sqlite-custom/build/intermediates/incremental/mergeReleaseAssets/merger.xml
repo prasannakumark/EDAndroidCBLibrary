@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/Prasanna/EDAndroidCBLibrary/libraries/couchbase-lite-java-native/sqlite-custom/src/main/assets"/><source path="/Users/Prasanna/EDAndroidCBLibrary/libraries/couchbase-lite-java-native/sqlite-custom/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/Prasanna/EDAndroidCBLibrary/libraries/couchbase-lite-java-native/sqlite-custom/src/release/assets"/></dataSet></merger>

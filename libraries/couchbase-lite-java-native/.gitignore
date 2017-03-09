@@ -1,0 +1,40 @@
+# generated files
+bin/
+gen/
+build/
+out/
+obj/
+
+# platform specific build files
+sqlite-custom/src/main/libs/
+sqlite-custom/src/main/obj/
+sqlite-default/src/main/libs/
+sqlite-default/src/main/obj/
+sqlcipher/src/main/libs/
+sqlcipher/src/main/obj/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Gradle cache files
+.gradle/
+
+# IntelliJ
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Maven
+log/
+target/
+
+# Other
+.DS_Store
+_sandbox
+
