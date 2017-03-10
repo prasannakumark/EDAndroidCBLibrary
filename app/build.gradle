@@ -1,8 +1,29 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven'
 
-group = 'com.github.prasannakumark'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'AndroidCBLLibrary'
+
+    publishedGroupId = 'com.edcontrols.edandroidcbl'
+    libraryName = 'EDAndroidCBL'
+    artifact = 'ed-androidcbl'
+
+    libraryDescription = 'Android CBl Library'
+
+    siteUrl = 'https://github.com/prasannakumark/EDAndroidCBLibrary'
+    gitUrl = 'https://github.com/prasannakumark/EDAndroidCBLibrary.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'EDAndroidCBL'
+    developerName = 'prasannakumar'
+    developerEmail = 'peddintiprasannak@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
