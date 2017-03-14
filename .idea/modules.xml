@@ -4,6 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EDAndroidCBLibrary.iml" filepath="$PROJECT_DIR$/EDAndroidCBLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/couchbase-lite-android/couchbase-lite-android.iml" filepath="$PROJECT_DIR$/libraries/couchbase-lite-android/couchbase-lite-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/couchbase-lite-java-core/couchbase-lite-java-core.iml" filepath="$PROJECT_DIR$/libraries/couchbase-lite-java-core/couchbase-lite-java-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/couchbase-lite-java-forestdb/couchbase-lite-java-forestdb.iml" filepath="$PROJECT_DIR$/libraries/couchbase-lite-java-forestdb/couchbase-lite-java-forestdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/couchbase-lite-java-native/couchbase-lite-java-native.iml" filepath="$PROJECT_DIR$/libraries/couchbase-lite-java-native/couchbase-lite-java-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/couchbase-lite-java-native/sqlcipher/sqlcipher.iml" filepath="$PROJECT_DIR$/libraries/couchbase-lite-java-native/sqlcipher/sqlcipher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/couchbase-lite-java-native/sqlite-custom/sqlite-custom.iml" filepath="$PROJECT_DIR$/libraries/couchbase-lite-java-native/sqlite-custom/sqlite-custom.iml" />
     </modules>
   </component>
 </project>
