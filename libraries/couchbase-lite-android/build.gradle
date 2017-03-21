@@ -54,7 +54,7 @@ android {
 def buildAndroidWithArtifacts = System.getProperty("buildAndroidWithArtifacts")
 
 dependencies {
-    compile buildAndroidWithArtifacts == null ?
+    /*compile buildAndroidWithArtifacts == null ?
             project(':libraries:couchbase-lite-java-core') :
             'com.couchbase.lite:couchbase-lite-java-core:' + version
 
@@ -65,7 +65,7 @@ dependencies {
     // Libraries required for tests only:
     androidTestCompile buildAndroidWithArtifacts == null ?
             project(':libraries:couchbase-lite-java-native:sqlcipher') :
-            'com.couchbase.lite:couchbase-lite-android-sqlcipher:' + version
+            'com.couchbase.lite:couchbase-lite-android-sqlcipher:' + version*/
 
 
     androidTestCompile 'commons-io:commons-io:2.0.1'
