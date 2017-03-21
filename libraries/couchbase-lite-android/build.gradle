@@ -54,18 +54,18 @@ android {
 def buildAndroidWithArtifacts = System.getProperty("buildAndroidWithArtifacts")
 
 dependencies {
-    /*compile buildAndroidWithArtifacts == null ?
+   compile buildAndroidWithArtifacts == null ?
             project(':libraries:couchbase-lite-java-core') :
             'com.couchbase.lite:couchbase-lite-java-core:' + version
 
-    compile buildAndroidWithArtifacts == null ?
-            project(':libraries:couchbase-lite-java-native:sqlite-custom') :
-            'com.couchbase.lite:couchbase-lite-android-sqlite-custom:' + version
+    /*compile buildAndroidWithArtifacts == null ?
+           project(':libraries:couchbase-lite-java-native:sqlite-custom') :
+           'com.couchbase.lite:couchbase-lite-android-sqlite-custom:' + version
 
-    // Libraries required for tests only:
-    androidTestCompile buildAndroidWithArtifacts == null ?
-            project(':libraries:couchbase-lite-java-native:sqlcipher') :
-            'com.couchbase.lite:couchbase-lite-android-sqlcipher:' + version*/
+   // Libraries required for tests only:
+   androidTestCompile buildAndroidWithArtifacts == null ?
+           project(':libraries:couchbase-lite-java-native:sqlcipher') :
+           'com.couchbase.lite:couchbase-lite-android-sqlcipher:' + version*/
 
 
     androidTestCompile 'commons-io:commons-io:2.0.1'
