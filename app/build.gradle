@@ -17,24 +17,13 @@ android {
         }
     }
 }
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.4.0'
 
     compile project(':libraries:couchbase-lite-android')
     compile project(':libraries:couchbase-lite-java-core')
-    fileTree(dir: 'libs', include: '**/*.aar')
-            .each { File file ->
-        dependencies.add("compile", [
-                name: file.name.lastIndexOf('.').with { it != -1 ? file.name[0..<it] : file.name },
-                ext: 'aar'
-        ])
-    }
 
 }
 
